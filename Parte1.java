@@ -11,25 +11,25 @@ public class Parte1 {
         for (double nota:notas){
             System.out.printf(nota+"  ");
         }
-        System.out.println("\nA media: "+ funcao.media(notas));
-        System.out.println("Alunos acima da media: "+ funcao.acimaMedia(notas, funcao.media(notas)));
-        System.out.println("A maior nota: "+ funcao.maiorNota(notas)+"\n");
+        System.out.println("\nA media: "+ Funcao.media(notas));
+        System.out.println("Alunos acima da media: "+ Funcao.acimaMedia(notas, Funcao.media(notas)));
+        System.out.println("A maior nota: "+ Funcao.maiorNota(notas)+"\n");
 
         System.out.println("QUESTÃO 2");
         System.out.println("Digite o valor total: ");
         int valorTotal=0;
         valorTotal = sc.nextInt();
         sc.nextLine();
-        funcao.calcularQuantNotas(valorTotal);
+        Funcao.calcularQuantNotas(valorTotal);
 
         System.out.println("Questão 3");
         System.out.print("Digite uma senha: ");
         String senha = sc.nextLine();;
-        funcao.validarSenha(senha);
+        Funcao.validarSenha(senha);
 
         System.out.println("Questão 4");
         int segundosTotais = sc.nextInt();
-        funcao.corverteHMS(segundosTotais);
+        Funcao.corverteHMS(segundosTotais);
 
         System.out.println("Questão 4");
         int[] vetor = {10,20,30,40,50};
@@ -37,7 +37,7 @@ public class Parte1 {
         for (int i=0; i<vetor.length; i++){
             System.out.print(vetor[i]+" ");
         }
-        funcao.inverterVetor(vetor);
+        Funcao.inverterVetor(vetor);
         System.out.println("\nVetor invertido: ");
         for (int i=0; i<vetor.length; i++){
             System.out.print(vetor[i]+" ");
